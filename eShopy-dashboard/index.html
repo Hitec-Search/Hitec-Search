@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShoppy Dasboard</title>
+    <!----------------- Stylesheet ------------------->
+    <link rel="stylesheet" href="style.css">
+    <!----------------- Font awesome CDN  ---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!--============ SIDE BAR SECTION ============-->
+    <!--============= top ==============-->
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo4.png">
+                    <!-- <h2>eSho<span class="danger">py</span></h2> -->
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <!--============= SIDEBAR =============-->
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <i class="fa-solid fa-dice-four"></i>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-square-plus"></i>                    
+                    <h3>Add</h3>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>                    
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <h3>Cart</h3>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-download"></i>                    
+                    <h3>Orders</h3>
+                </a>
+                
+                <a href="#">
+                    <i class="fa-solid fa-message"></i>                    
+                    <h3>Inbox</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>                    
+                    <h3>Delivery</h3>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>                    
+                    <h3>Setting</h3>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>                    
+                    <h3>Logout</h3>
+                </a>
+            </div>
+            <!--================== END OF SIDEBAR ==================-->
+        </aside>
+
+        <!--==================== MAIN SECTION ==================-->
+        <main>
+            <div class="search">
+                <form action="#">
+                <input type="text" placeholder="Type to Search" required>
+                <i class="fa-solid fa-microphone"></i>
+                <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+            </div>
+            <h1>Dashboard</h1>
+        
+            <div class="date">
+                <input type="date">
+            </div>
+          
+            <div class="insights">
+                <!--============= SALES ===============-->
+                <div class="stock">
+                    <i class="fa-solid fa-coins"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Stock</h3>
+                            <h1>$1,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>58%</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>                 
+                    </div>
+                    <small class="text-muted">Last 1 day 10hrs</small>
+                </div>
+                <!--================= END OF SALES ==================-->
+
+                <!--============= Purchase ===============-->
+                <div class="sales">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Sales</h3>
+                            <h1>$948</h1>
+                        </div>
+                        <div class="progress dark">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>74%</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    </div>
+                    <small class="text-muted">Last 2 days 5hrs</small>
+                </div>
+                <!--================= END PURCHASE ==================-->
+
+                <!--============= ORDER ===============-->
+                <div class="total">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total</h3>
+                            <h1>$1,978</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>96%</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <small class="text-muted">Last 3 day 3hrs</small>
+                </div>
+                <!--================= END OF ORDER ==================-->
+            </div>
+            <!--=============== TABLE ===============-->
+            <div class="recent-orders">
+                <h2>Orders <i class="fa-solid fa-ellipsis-vertical"></i></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product</th>
+                            <th>Customer</th>
+                            <th>Contact</th>
+                            <th>Status <i class="fa-solid fa-ellipsis-vertical"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="warning">136M</td>
+                            <td class="warning">over coat</td>
+                            <td class="warning">Binraj</td>
+                            <td class="warning">+127...</td>
+                            <td class="warning">Pending</td>
+                        </tr>
+                        <tr>
+                            <td class="success">150L</td>
+                            <td class="success">Faraq</td>
+                            <td class="success">Asim</td>
+                            <td class="success">+135...</td>
+                            <td class="success">deliver</td>
+                        </tr>
+                        <tr>
+                            <td class="danger">189S</td>
+                            <td class="danger">Shirt</td>
+                            <td class="danger">Wasil</td>
+                            <td class="danger">+294...</td>
+                            <td class="danger">Cancel</td>
+                        </tr>
+                        <tr>
+                            <td class="returen">178L</td>
+                            <td class="returen">dress</td>
+                            <td class="returen">Smaas</td>
+                            <td class="returen">+345...</td>
+                            <td class="returen">return</td>
+                        </tr>
+                        <tr>
+                            <td class="success">249N</td>
+                            <td class="success">Shoes</td>
+                            <td class="success">Ajmeer</td>
+                            <td class="success">+678...</td>
+                            <td class="success">recevied</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show More <i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+        </main>
+        <!--============== END OF MAIN SECTION =============-->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>                
+                </button>
+                <div class="theme-toggler" id="theme-toggler">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hi<b> Reena</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/p0.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <!--============ END OF TOP  =============-->
+            <!-- ============== MESSAGES =============== -->
+            <div class="recent-updates">
+                <h2>Recentely Orders <i class="fa-solid fa-ellipsis-vertical"></i></h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/p1.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Vicky Doger</b> order dress pent and coat</p>
+                            <small class="text-muted">8 minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/p2.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Sameen saboor</b> order of ladies faraq</p>
+                            <small class="text-muted">20 minuts Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/p3.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Alay jee</b> place order dress Shirt and tie</p>
+                            <small class="text-muted">1 hr Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================ END OF RECENT OF UPDATES ================ -->
+            <div class="sales-analytics">
+                <h2>Sales Analytics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Online Orders</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">91%</h5>
+                        <h3>3648</h3>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <i class="fa-solid fa-square-poll-horizontal"></i>                    
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>By Location</h3>
+                            <small class="text-muted">Last 2 Days Hours</small>
+                        </div>
+                        <h5 class="warning">70%</h5>
+                        <h3>8900</h3>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="item cutomer">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-plus"></i>                   
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>New User</h3>
+                            <small class="text-muted">Last 3 Days ago</small>
+                        </div>
+                        <h5 class="danger"> 25%</h5>
+                        <h3>87890 </h3>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <h3>Add Products</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
