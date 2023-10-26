@@ -1,4 +1,8 @@
 # dashboard-eShopy
+* eShopy-eCommerce-website-dashboard 
+* download the zip file
+* extract the zip file in Xampp htdoc folder
+* on the xampp server and type in browser localhost/(fil name)
 
 <h1 align="center">Hi 👋, Hitech Search</h1>
 <h3 align="center">Excited frontend developer</h3>
