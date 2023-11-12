@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'poppins';
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right top, #016d67, #086b5e);
+    place-items: center;
+    display: grid;
+}
+/* ====================== Navigation Bar ===================== */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    top: 0;
+    box-shadow: 0 0 30px 0 black;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+}
+nav i {
+    padding: 5px;
+    color: #ffff;
+}
+.navbar h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #fff;
+}
+.navbar span {
+    color: #c1a0e7;
+}
+
+nav .right {
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 50px;
+    display: flex;
+}
+
+nav .right input {
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+nav .right i {
+    color: #000;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+nav .right button {
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+}
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav .profile i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* ============================ container ============================ */
+.container {
+    padding: 20px;
+    box-shadow: 0 0 30px 0 #fff;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    margin: 40px;
+    height: fit-content;
+}
+.container:hover {
+    /* box-shadow: 0 0 30px 0 black; */
+    transform: scale(1.02);
+}
+.container h1 {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    animation: pulse 1s ease-in infinite;
+}
+.container .user {
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+.container .user i {
+    font-size: 35px;
+    color: #fff;
+    padding: 10px;
+    animation: pulse 1s ease-in infinite;
+}
+
+.container .select {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.container .select label {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+}
+.container .select select {
+    padding: 2px;
+    box-shadow: 0 0 30px 0 #000;
+    border-radius: 30px;
+    width: 20%;
+    margin-right: 10px;
+}
+
+.container h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(128, 3, 3);
+    font-size: 20px;
+    animation: pulse 1s ease-in infinite;
+}
+
+.container h3 {
+    color: rgb(238, 229, 229);
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 550;
+    padding: 8px;
+}
+.container p {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 22px;
+    box-shadow: 0 0 20px 0 #000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.container p:hover {
+    box-shadow: 0 0 30px #fff;
+}
+
+.container div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: transparent;
+    border: none;
+}
+
+.container p span {
+    color: #e0c3c3;
+}
+.container .warning {
+    color: rgb(204, 204, 47);
+}
+.container .success {
+    color: rgb(131, 223, 184);
+}
+.container .danger {
+    color: rgb(121, 5, 22);   
+}
+
+.container button {
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0 0 30px 0 #fff;
+    display: flex;
+    color: #fff;
+    background: #10834d;
+    justify-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    animation: pulse 1s ease-in infinite;
+    border-bottom: 1px solid #fff;
+}
+
+.container button:hover {
+    background: #264697;
+    box-shadow: 0 0 30px 0 black;
+    border: none;
+}
+
+
+/* ======================= App ========================= */
+
+.app {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px 0 #fff;
+    display: none;
+}
+
+.app .user i {
+    color: #fff;
+    font-size: 26px;
+}
+.app h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.quiz {
+    padding: 10px 0;
+    animation: fade-in 0.5s ease forwards;
+}
+
+.quiz h2 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+}
+
+.btn {
+    font-family: sans-serif;
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 0.5px solid #222;
+    padding: 8px 20px;
+    margin: 8px 0;
+    text-align: left;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 30px 0 black;
+    outline: none;
+    animation: fade-in 0.5s ease forwards;
+}
+
+.btn:hover:not([disabled]) {
+    background: #0cb34c;
+    color: #fff;
+    outline: none;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.app .bottom {
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+
+#next-btn {
+    box-shadow: 0 0 30px 0 #000;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    width: 200px;
+    border: 0;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    transition: all 300ms;
+    display: none;
+}
+.app .timer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: red;
+    float: right;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: pulse 1s ease-in infinite;
+}
+
+#next-btn:hover {
+    background: #16695e;
+    color: #fff;
+    box-shadow: 0 0 30px 0 #fff;
+}
+
+.correct {
+    background: rgb(3, 150, 64);
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 30px 0 #fff;
+}
+
+.incorrect {
+    background: rgb(245, 65, 65);
+    color: #fff;
+}
+
+#answer-buttons {
+    animation: fade-in 0.5s ease forwards;
+}
+
+/* ========================== Animation Keyframe =============================== */
+
+
+/* =========== Adding animation to Timer ============ */
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*=========== Adding Animation to choices =========== */
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translatex(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+/* ========================= Large screen media quiery ============================ */
+@media screen and (max-width:900px){
+    nav {
+        padding: 5px;
+    }
+    .navbar h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    nav .right {
+        padding: 2px;
+    }
+    nav .right input {
+        padding: 2px;
+    }
+    nav .right i {
+        font-size: 14px;
+        padding: 0 2px;
+    }
+    nav .profile img {
+        width: 30px;
+        height: 30px;
+    }
+    .container {
+        width: 92%;
+    }
+    .container h1 {
+        font-size: 17px;
+    }
+    .container h3 {
+        font-size: 14px;
+    }
+    .container .select label {
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .container p {
+        font-size: 12px;
+        margin: 5px;
+        line-height: 18px;
+    }
+    .container .select {
+        width: 100%;
+    }
+    .container .select select {
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 10px;
+        margin: 0 10px 0 3px;
+        width: 100%;
+        padding: 0;
+    }
+    .app {
+        padding: 10px;
+    }
+    .app h1 {
+        font-size: 14px;
+        text-align: center;
+        margin: 10px;
+    }
+    .quiz h2 {
+        font-size: 15px;
+    }
+}
+
+/* ====================== small screen Media Query ====================== */
+@media screen and (max-width:375px) {
+    nav .right {
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+    .container {
+        width: 97%;
+    }
+    .container .select {
+        width: 100%;
+    }
+    .container h1 {
+        font-size: 16px;
+    }
+}

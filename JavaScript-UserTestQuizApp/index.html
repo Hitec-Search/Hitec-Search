@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz App</title>
+    <!-- ====================== STYLESHEET ======================= -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ====================== FONTAWESOME CDN ======================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- ========================= Navigation bar ========================== -->
+    <nav>
+        <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <h1>Test<span>app</span></h1>
+        </div>
+            <div class="right">
+                <form action="#">
+                    <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" name="search" required="">
+                    <i class="fa-solid fa-microphone"></i>
+                </form>
+            </div>
+            <div class="profile">
+                <img src="./img/p.png" alt="profile">
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================= User Agreement page ======================= -->
+    <div class="container">
+        <div class="user"><i class="fa-solid fa-user"></i>
+            <h1><span class="success">Welcome guyz's</span> are you <span class="warning">Ready</span> to take Test / Quiz?</h1>
+         </div>
+            <div class="select">
+              <label for="level">Level</label>
+              <select name="" id="level">
+                  <option value="">Any</option>
+                  <option value="middle">middle</option>
+                  <option value="high">high</option>
+                  <option value="any">any</option>
+              </select>
+              <label for="defficulty">Defficulty</label>
+              <select name="defficulty" id="defficult">
+                  <option value="">Any</option>
+                  <option value="medium">medium</option>
+                  <option value="hard">hard</option>
+              </select>
+              <label for="time">Time</label>
+              <select name="time" id="time">
+                  <option value="">Any</option>
+                  <option value="10">10s</option>
+                  <option value="15">20s</option>
+              </select>
+            </div>
+          <h2>Note!</h2>
+          <h3>Please follow the instruction and <span class="warning">Agree</span> our <span class="danger">terms</span> and 
+            <span class="danger">Condition</span> to take test</h3>
+           <p>
+              Each question have <span class="warning"> 20s </span> of time and <span class="success">One point / question</span>.
+              Total questions is <span>10</span> and every question have four choices <span>a, b, c, d</span> select one.
+              <span class="danger">There is no second attempt option</span>. display 
+              <span class="success">Correct Answer</span> if your selected choice is <span class="warning">Wrong</span>.
+              Every question is <span class="warning">time bound</span> if you are not respond in given time the test will be definitely hand over and display popup alert message to start again are cancel. 
+              You will be <span class="success">Rewarded</span> after completing the test. 
+              <input type="checkbox" id="checked" required="">
+            </p>
+           <div>
+             <button class="start">Start now</button>
+           </div>
+        </div>  
+    </div>
+        
+    <div class="app">
+        <div class="timer"></div>
+        <div class="user"><i class="fa-solid fa-user"></i>
+        <h1 class="header">Please take your time and test</h1>
+        <div class="quiz">
+            <h2 id="question">Questions here</h2>
+            <div clas id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <div class="bottom">
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="script.js"></script>
+</body>
+</html>
